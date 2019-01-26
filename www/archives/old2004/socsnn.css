@@ -1,0 +1,38 @@
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+.nav {
+    background-color: #ffffff;
+}
+.content {
+    background-color: #ffffff;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    padding: 10px;
+    width: 612px;
+}
+
+.footer {
+    /* margin: 0px;
+    padding: 10px; */
+    font-size: small;
+    /* border-width: 1px 0px 0px 0px;
+    border-color: #003399;
+    border-style: solid; */
+    padding: 10px 0 10px 0;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+a:link {color: blue;}
+a:visited {color: purple;}

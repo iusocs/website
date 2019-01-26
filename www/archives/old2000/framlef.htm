@@ -1,0 +1,85 @@
+<html>
+
+<head>
+<base target="main">
+<title>Navigation Frame</title>
+<script language="JavaScript"> 
+     <!--hide 
+
+     browserName=navigator.appName; 
+     browserVer=parseInt(navigator.appVersion);
+
+       if ((browserName=="Netscape" && browserVer>=3) || (browserName=="Microsoft Internet Explorer" && browserVer>=4))    
+       version="n3";
+       else
+         version="n2";
+
+       if (version=="n3")
+
+        {
+          pic1on= new Image(44,18);
+          pic1on.src="images/home2.gif";  
+			pic2on= new Image(95,18);
+          pic2on.src="images/about2.gif";
+			pic3on= new Image(52,18);
+          pic3on.src="images/event2.gif";
+			pic4on= new Image(55,18);
+          pic4on.src="images/faculty2.gif";
+			pic5on= new Image(41,18);
+          pic5on.src="images/link2.gif";
+
+          pic1off= new Image(44,18);
+          pic1off.src="images/home1.gif";  
+			pic2off= new Image(95,18);
+          pic2off.src="images/about1.gif";
+			pic3off= new Image(52,18);
+          pic3off.src="images/event1.gif";
+			pic4off= new Image(55,18);
+          pic4off.src="images/faculty1.gif";
+			pic5off= new Image(41,18);
+          pic5off.src="images/link1.gif";
+        }
+
+     function lightup(imgName)
+      {
+        if (version=="n3")
+         {
+           imgOn=eval(imgName + "on.src");
+           document[imgName].src= imgOn;
+         }
+      }
+
+     function turnoff(imgName)
+      {
+        if (version=="n3")
+         {
+           imgOff=eval(imgName + "off.src");
+           document[imgName].src= imgOff;
+         }
+      }
+
+     //-->
+</script>
+</head>
+
+<body text="#000000" link="#000000" vlink="#000000" alink="#FF0000" background="images/back.jpg">
+<div id="overDiv" style="position:absolute; visibility:hide;z-index:1;"></div><script language="JavaScript" src="overlib.js"></script>
+
+
+<p align="center"><img src="images/framle1.jpg" alt="framle1.jpg (2877 bytes)" WIDTH="80" HEIGHT="101"></p>
+
+<p align="center"><a href="home.htm" onMouseOver="lightup('pic1')" onMouseOut="turnoff('pic1')" target="rbottom"><img src="images/home1.gif" name="pic1" border="0" alt="Home" WIDTH="44" HEIGHT="18"></a></p>
+
+<p align="center"><a href="about.html" onMouseover="lightup('pic2')" onMouseout="turnoff('pic2')" target="rbottom"><img src="images/about1.gif" name="pic2" border="0" alt="Information About SOCS and how to get on the email list" WIDTH="95" HEIGHT="18"></a></p>
+
+<p align="center"><a href="upcom1.htm" onMouseover="lightup('pic3')" onMouseout="turnoff('pic3')" target="rbottom"><img src="images/event1.gif" name="pic3" border="0" alt="Upcomming Events" WIDTH="52" HEIGHT="18"></a></p>
+
+<p align="center"><a href="faculty.htm" onMouseover="lightup('pic4')" onMouseout="turnoff('pic4')" target="rbottom"><img src="images/faculty1.gif" name="pic4" border="0" alt="Faculty Research Interests" WIDTH="55" HEIGHT="18"></a></p>
+
+<p align="center"><a href="linko.html" onMouseover="lightup('pic5')" onMouseout="turnoff('pic5')" target="rbottom"><img src="images/link1.gif" name="pic5" border="0" alt="Useful Links Related to Cog. Sci." WIDTH="41" HEIGHT="18"></a></p>
+
+<p align="center">&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <base href="/~iusocs/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SOCS@IU</title>
+
+    <link rel="stylesheet" href="assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon.css" type="text/css" >
+    <link rel="stylesheet" href="assets/fonts/webfonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+    
+    <!-- load research directory file -->
+    <script src="directory.js"></script>
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>
+        <div class="loader">
+            <i class="fa fa-cog fa-spin fa-2x"></i><br>
+        </div>
+    </my-app>
+  </body>
+
+</html>

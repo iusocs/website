@@ -1,0 +1,102 @@
+/* CSS Document */
+
+body {
+	background-color: white;
+	font-family:  "Times New Roman", Times, serif;
+	font-size: 13pt;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	line-height: 20pt;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+a:link, a:visited, a:active {
+	color: #970000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+	background: #970000;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	color: #666666
+}
+h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13pt;
+	color: #666666;
+}
+
+table {
+	font-size: 9pt;
+	text-align: justify;
+}
+
+#maincontainer{
+width: 840px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+background: white;
+height: 90px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin-right: 370px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
+}
+
+#leftcolumn{
+float: left;
+text-align: right;
+font-family: Helvetica, Arial, sans-serif;
+width: 100px; /*Width of left column in pixel*/
+margin-left: -290px; /*Set margin to -(LeftColumnWidth + RightColumnWidth)*/
+background: white;
+line-height: 52pt;
+}
+
+#rightcolumn{
+float: left;
+width: 190px; /*Width of right column in pixels*/
+margin-left: -190px; /*Set margin to -RightColumnWidth*/
+background: white;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: white;
+text-align: center;
+padding: 4px 0;
+color: #CCCCCC
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}

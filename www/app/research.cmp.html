@@ -1,0 +1,19 @@
+<h1 class="head big-header-left">Research</h1>
+<div class="row content">
+    <div class="col-md-12">
+        <p class="med">
+        Welcome to the SOCS research directory. A lot of undergrads in cognitive science are interested in being involved in research, so we are in the process of organizing a directory of labs currently looking for assistance. This will develop over time so check back often!
+        </p>
+        <p style>Click on the lab's name to go to their website.</p>
+        <div class="directory">
+        <div class="listing panel info-panel" *ngFor="let listing of listings">
+                <h3>
+                    <a class="styled-link" href="{{listing.website}}" target="_blank">{{listing.name}}</a>
+                </h3>
+                <h4>Contact {{listing.contact}} at <u>{{listing.email}}</u></h4>
+                <h5>Position offered: {{listing.position}}</h5>
+                <p class="small">{{listing.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

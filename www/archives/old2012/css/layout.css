@@ -1,0 +1,145 @@
+body {
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-image: url(../img/brain.png);
+}
+
+h1 {
+	font-size: 200%;
+	background-color: white;
+}
+
+h2 {
+	font-size: 150%;
+	line-height: 1.111;
+	padding-bottom: 4px;
+}
+
+a, a:visited {
+	color: #4278d3;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #154089;
+	text-decoration: underline;
+}
+
+#wrapper {
+	height: 100%;
+	width: 720px;
+	margin: 0 auto;
+}
+
+#header {	
+}
+
+#header h1 {
+	font-family: Serif;
+	font-size: 400%;
+	text-align: center;
+	font-weight: bold;
+	background: none;
+}
+
+#header h2 {
+	text-align: center;
+	background: none;
+}
+
+/* BODY */
+#body {
+}
+
+#body h2 {
+	width: 100%;
+	color: #4278d3;
+	border-bottom: 1px solid #4278d3;
+	/*background-color: white;*/ 
+}
+
+#body li {
+	display: block;
+	padding-left: 15px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(../img/half-nueron25.jpg);
+	
+}
+.content p {
+	margin: 10px 0 10px;
+	background-color: white;
+}
+
+.content p:last-child {
+	margin: 10px 0 30px;
+}
+
+.content dt {
+    margin: 0;
+    padding: 0;
+    width: 105px;
+    font-weight: bold;
+    float: left;
+}
+
+.content dd {
+    margin-left: 105px;
+}
+
+/* LEFT COLUMN*/
+
+/*#leftcol {
+	float: left;
+	width: 176px;
+	height: 100%;
+	padding: 12px 8px;
+	text-align: left;
+}*/
+
+/* NAVIGATION */
+#nav {
+	margin-bottom: 32px;
+}
+
+#nav ul {
+	white-space:nowrap;
+	text-align: center;
+}
+
+#nav li {
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.667em;
+	display: inline;
+	padding-left: 15px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: url(../img/full-neuron25.jpg);
+	margin-bottom: 1em;
+	
+}
+
+#nav li li, #nav li dl {
+	font-weight: normal;
+	text-transform: none;
+	background: none;
+	margin-left: -16px;
+	padding-left: 15px;
+	margin-bottom: 0;
+	border-left: 2px solid #4278d3;
+}
+
+#nav li dl dd {
+	padding-left: 15px;
+}
+
+.selected, .selected a {
+	/*color: #154089;*/
+	color: #a22939;
+}
+
+td, th {
+	padding: 2px;
+}

@@ -1,0 +1,30 @@
+<header></header>
+<navbar></navbar>
+<div class="wrapper container">
+    <router-outlet></router-outlet>
+    <footer></footer>
+</div>
+<i class="icon-netbrain background" id="ico1"></i>
+<i class="fa fa-cogs background" id="ico2"></i>
+<style>
+    i.background {
+        font-size: 300px;
+        position: fixed;
+        bottom: 0;
+        color: #e2e2e2;
+        z-index: -1;
+    }
+    i#ico2 {
+        bottom: -79px;
+    }
+    i#ico1 {
+        right: -9px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        bottom: 180px;
+    }
+</style>
